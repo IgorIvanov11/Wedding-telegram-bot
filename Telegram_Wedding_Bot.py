@@ -27,7 +27,7 @@ def ask_attendance(message):
     bot.register_next_step_handler(msg, attendance_callback)
 
 def attendance_callback(message):
-    chat_id = 408158395
+    chat_id = # Here write your personal chat id so that messages about users' replies will be sent to you.
     if message.text == 'Да':
         bot.send_message(chat_id, f'Гость "{message.from_user.first_name} {message.from_user.last_name} "({message.from_user.username})" " будет на свадьбе!'+ emoji.emojize(":check_mark:"))
         answers[message.from_user.username] = message.text
